@@ -7,7 +7,7 @@ import React from "react";
 export default function WhatIsAgent() {
   return (
     <div className=" min-h-screen flex items-center justify-center p-6 font-serif">
-      <div className="bg-white w-full max-w-5xl p-6 border-4 rounded-lg shadow-lg text-center md:p-8 animate-fadeIn border-4 border-red-500 animate-borderGlow">
+      <div className="bg-white w-full max-w-5xl p-6  rounded-lg shadow-lg text-center md:p-8 animate-fadeIn ">
         <h2 className="text-2xl md:text-3xl font-bold text-black">Become an Inspire Inc. Agent & Earn Big!</h2>
         <p className="mt-4 text-gray-700 text-base md:text-lg">
           Looking for an opportunity to <strong>earn extra income</strong> while helping others <strong>invest in quality products</strong>? 
@@ -32,18 +32,7 @@ export default function WhatIsAgent() {
 
       
 
-      <style jsx global>{`
-        @keyframes borderGlow {
-          0% { border-color: #ff4757; }
-          25% { border-color: #1e90ff; }
-          50% { border-color: #2ed573; }
-          75% { border-color: #ffa502; }
-          100% { border-color: #ff4757; }
-        }
-        .animate-borderGlow {
-          animation: borderGlow 3s infinite alternate;
-        }
-      `}</style>
+      
     </div>
   );
 }
