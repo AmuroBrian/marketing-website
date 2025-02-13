@@ -1,8 +1,13 @@
-import LoginAuthentication from "./components/LoginAuthentication";
-import Navigation from "./components/navigation"; // Make sure "Navigation" has a capital "N"
+
+import Image from "next/image";
+import WhatIsAgent from "./components/WhatIsAgent";
+import EmailForm from "./components/EmailForm";
 
 export default function Home() {
   return (
+    
+
+
     <div className="flex flex-col min-h-screen">
       {/* Top Section - LoginAuthentication */}
       <div>
@@ -13,6 +18,11 @@ export default function Home() {
       <div>
         <Navigation />
       </div>
+
+    <div>
+    <WhatIsAgent/>
+    <EmailForm/>
     </div>
+
   );
 }
