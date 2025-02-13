@@ -1,9 +1,9 @@
-import Image from "next/image";
+import InspireWalletIntro from "./components/InspireWalletIntro";
 
 export default function Home() {
   return (
     <div>
-      Start with here
+      <InspireWalletIntro />
     </div>
   );
 }
