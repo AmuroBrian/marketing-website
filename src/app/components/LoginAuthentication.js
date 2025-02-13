@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default function LoginAuthentication() {
     return (
-        <div>
-
+        <div 
+            className="bg-gray-500 mt-[-20] h-[80vh] bg-cover bg-center flex justify-center items-center text-white text-3xl"
+        >
+            Sir Brian
         </div>
-    )
+    );
 }
