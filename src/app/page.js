@@ -1,9 +1,10 @@
 import Image from "next/image";
+import LoginAuthentication from "./components/LoginAuthentication";
 
 export default function Home() {
   return (
     <div>
-      Start with here
+      <LoginAuthentication />
     </div>
   );
 }
