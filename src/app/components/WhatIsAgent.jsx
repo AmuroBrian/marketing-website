@@ -55,7 +55,6 @@ export default function WhatIsAgent() {
         <strong className="text-black">get rewarded</strong> every time you help
         someone <strong className="text-black-500">invest or purchase!</strong>
       </p>
-
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -68,7 +67,6 @@ export default function WhatIsAgent() {
           💰
         </p>
       </motion.div>
-
       <motion.div
         className="mt-6 flex justify-center"
         whileHover={{ scale: 1.1 }}
