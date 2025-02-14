@@ -9,7 +9,7 @@ export default function TravelProtect() {
         {/* Left Side - Image */}
         <div className="w-full md:w-1/2 h-64 md:h-auto">
           <img
-            src="/images/TravelProtect.jpg"
+            src="/images/TravelProtect1.jpg"
             alt="Travel Protect"
             className="w-full h-full object-contain rounded-l-2xl"
           />
@@ -18,20 +18,14 @@ export default function TravelProtect() {
         {/* Right Side - Text Content */}
         <div className="w-full md:w-1/2 font-bold text-center md:text-left mt-6 md:mt-0 px-4">
           <h1 className="text-3xl font-bold text-gray-900">
-            Visiting the Philippines soon? 
+          Introducing Inspire Travel Protection.
           </h1>
                 <br>
                 </br>
           <h2 className="text-2xl font-bold text-gray-900">
-          Introducing Inspire Travel Protection.
+          We  guarantee your stay in Manile will be safe and worry free. 
           </h2>
 
-
-
-          <p className="text-lg text-gray-600 mt-2">
-            
-            We will guarantee your stay in Manile will be safe and worry free. 
-          </p>
   
           <div className="flex justify-center md:justify-end mt-4">
                     <Link
