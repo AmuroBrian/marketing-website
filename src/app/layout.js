@@ -28,12 +28,6 @@ export default function RootLayout({ children }) {
         {/* Navigation Bar */}
         <nav className="bg-white text-black p-4 shadow-lg shadow-gray-500 w-full fixed top-0 z-50 h-[10vh]">
 
-
-
-
-
-
-
           <div className="max-w-7xl mx-auto flex items-center justify-between">
 
             {/* Logo & Title */}
@@ -49,7 +43,7 @@ export default function RootLayout({ children }) {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6 items-center">
               <Link href="/ContactUs" className="text-black hover:text-gray-600">Contact Us</Link>
-              <Link href="/Login" className="text-black hover:text-gray-600">LogIn</Link>
+              <Link href="/Login" className="text-black hover:text-gray-600">Login</Link>
               {pathname !== "/" && (
                 <Link href="/" className="text-white hover:text-gray-600">Home</Link>
               )}
