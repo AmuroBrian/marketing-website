@@ -2,12 +2,7 @@ import React from "react";
 
 export default function Navigation() {
     return (
-        // <div 
-        //     className="bg-yellow-600 mt-auto h-[80vh] bg-cover bg-center  flex justify-center items-center text-white text-3xl"
-            
-        // >
-        //     Aljames
-        // </div>
+
 
         <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-2xl p-6 md:p-10 max-w-6xl mx-auto border-4 border-blue-500">
         {/* Left Side - Image */}
