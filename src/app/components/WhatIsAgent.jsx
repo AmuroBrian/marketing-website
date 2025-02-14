@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -7,6 +8,8 @@ export default function WhatIsAgent() {
     <div className="dark:bg-white-800 text-black p-3">
       {/* Divider Line */}
       <div className="border-t-4 border-black-900 w-1/2 mx-auto mt-10 mb-3"></div>
+      
+      
 
       <h2 className="text-3xl md:text-4xl font-extrabold text-black mt-10 text-center">
         Become an <span className="text-black-500">Inspire Inc.</span> Agent & Earn <span className="text-black">Big!</span>
@@ -48,6 +51,12 @@ export default function WhatIsAgent() {
           Register Now
         </button>
       </motion.div>
+
+      <div>
+        <accountInformation/>
+        </div>
     </div>
+
+    
   );
 }
