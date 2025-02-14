@@ -9,6 +9,30 @@ import TravelProtect from "./components/TravelProtect";
 import TravelProtectAllInfo from "./components/TravelProtectAllInfo";
 
 
+<<<<<<< HEAD
+
+export default function Home() {
+  return (
+    <div>
+        <div>
+          <LoginAuthentication />
+        </div>
+
+        <div>
+            <Navigation />
+        </div>
+
+        <div>
+            <WhatIsAgent />
+        </div>
+
+        <div>
+            <EmailForm />
+        </div>
+
+      
+
+=======
 =======
 import Navigation from "./components/navigation";
 >>>>>>> ed9ad2d1567182b48d30d60e1137fec3205aa835
@@ -17,6 +41,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
 <<<<<<< HEAD
+>>>>>>> 71561d960b332594f5cc43c2b26c2688f6387299
      
         <div>
           <LoginAuthentication/>
