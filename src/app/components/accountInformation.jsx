@@ -1,11 +1,16 @@
 "use client";
 
 import React from "react";
+export default function AccountInformation() {
+    return (
 
-export default function accountInformation() {
-  return (
-    <div className=" h-50 w-10 bg-white-500">
-      <p>hello</p>
-    </div>
-  );
+        <div className=" h-100 w-10 bg-white-500 text-black-200">
+        <p>hello</p>
+        </div>
+
+
+
+    );
+
+
 }
