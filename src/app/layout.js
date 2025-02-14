@@ -5,6 +5,7 @@ import "./globals.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import LoginAuthentication from "./components/LoginAuthentication";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -99,11 +100,10 @@ export default function RootLayout({ children }) {
             </div>
           )}
         </nav>
-
         {/* Push Content Below Navbar */}
-        <div className="pt-20 dark:bg-gray-800"></div>
-
-        <div className="container mx-auto ">
+        <div className="pt-20"></div>
+        <LoginAuthentication />
+        <div className="container mx-auto px-1 py-6 border-black border-2 border-solid">
           {children}
         </div>
 
@@ -112,23 +112,21 @@ export default function RootLayout({ children }) {
           <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-gray-800 dark:text-gray-400">
             Copyright © 2024 Inspire Holdings Inc. - All Rights Reserved.
           </div>
-          
+
           <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-gray-500 dark:text-gray-400 flex justify-center space-x-6">
             <a href="https://inspirenextglobal.com/" className="text-white hover:text-gray-600">
               Inspire Next Global
             </a>
-
-            <a href="https://inspireholdings.ph/home" className="text-white hover:black-gray-600">
+            <a href="https://inspireholdings.ph/home" className="text-white hover:text-gray-600">
               Inspire Holdings
             </a>
-          </div>
+          </div >
+          <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-gray-500 dark:text-gray-400">
 
-
-          <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-black-500 dark:white-gray-400">
             Powered by Inspire Holdings Inc.
           </div>
-        </footer>
-      </body>
-    </html>
+        </footer >
+      </body >
+    </html >
   );
 }
