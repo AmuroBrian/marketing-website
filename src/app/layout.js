@@ -5,7 +5,8 @@ import "./globals.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import LoginAuthentication from "./components/LoginAuthentication";
+import LoginModal from "./components/LoginModal";
+import AutoCarousel from "./components/AutoCarousel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +21,13 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-[#fefffe] to-[#ffffff]`}>
-
         {/* Navigation Bar */}
         <nav className="bg-white text-black p-4 shadow-lg shadow-gray-500 w-full fixed top-0 z-50 h-[10vh]">
 
@@ -43,7 +46,7 @@ export default function RootLayout({ children }) {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6 items-center">
               <Link href="/ContactUs" className="text-black hover:text-gray-600">Contact Us</Link>
-              <Link href="/Login" className="text-black hover:text-gray-600">Login</Link>
+              <Link href="/" className="text-black hover:text-gray-600" onClick={openModal}>Login</Link>
               {pathname !== "/" && (
                 <Link href="/" className="text-black hover:text-gray-600">Home</Link>
               )}
@@ -96,11 +99,15 @@ export default function RootLayout({ children }) {
         </nav>
         {/* Push Content Below Navbar */}
         <div className="pt-20"></div>
-        <LoginAuthentication />
+        <div className="z-100">
+          <LoginModal isOpen={isModalOpen} closeModal={closeModal} />
+        </div>
+        <div className="w-full h-[80vh] justify-center items-center ">
+          <AutoCarousel />
+        </div>
         <div className="container mx-auto px-1 py-6 border-black border-2 border-solid">
           {children}
         </div>
-
         {/* Footer */}
         <footer className="bg-white shadow-sm w-full dark:bg-gray-800 ">
           <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-gray-800 dark:text-gray-400">
