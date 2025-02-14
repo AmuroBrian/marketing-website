@@ -4,6 +4,8 @@ import WhatIsAgent from "./components/WhatIsAgent";
 import EmailForm from "./components/EmailForm";
 import LoginAuthentication from "./components/LoginAuthentication";
 import Navigation from "./components/navigation"; 
+import TravelProtect from "./components/TravelProtect";
+import TravelProtectAllInfo from "./components/TravelProtectAllInfo";
 
 
 
@@ -18,12 +20,21 @@ export default function Home() {
 
     
         <div>
+          <br></br>
             <Navigation/>
         </div>
 
         <div>
           <WhatIsAgent/>
           <EmailForm/>
+        </div>
+
+
+
+        <div>
+          <TravelProtect/>
+            <br></br>
+          <TravelProtectAllInfo/>
         </div>
 
     </div>

@@ -15,7 +15,7 @@ export default function Navigation() {
           <img
             src="/images/InspireWallet.jpg"
             alt="Inspire Wallet"
-            className="w-full h-full object-cover rounded-l-2xl"
+            className="w-full h-full object-contain rounded-l-2xl"
           />
         </div>
   
