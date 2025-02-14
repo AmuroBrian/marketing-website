@@ -26,13 +26,20 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-[#fefffe] to-[#ffffff]`}>
 
         {/* Navigation Bar */}
-        <nav className="bg-white dark:bg-gray-800 p-4 shadow-md w-full fixed top-0 z-50 h-16">
+        <nav className="bg-white text-black p-4 shadow-lg shadow-gray-500 w-full fixed top-0 z-50 h-[10vh]">
+
+
+
+
+
+
+
           <div className="max-w-7xl mx-auto flex items-center justify-between">
 
             {/* Logo & Title */}
-            <div className="flex items-center text-white text-lg md:text-2xl font-semibold font-serif">
+            <div className="flex items-center text-black-200 text-lg md:text-2xl font-semibold font-serif">
               <img
-                src=" "
+                src="/images/logoPHI.jpg"
                 alt="Logo"
                 className="w-10 h-10 object-contain"
               />
@@ -41,8 +48,8 @@ export default function RootLayout({ children }) {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6 items-center">
-              <Link href="/ContactUs" className="text-white hover:text-gray-600">Contact Us</Link>
-              <Link href="/Login" className="text-white hover:text-gray-600">LogIn</Link>
+              <Link href="/ContactUs" className="text-black hover:text-gray-600">Contact Us</Link>
+              <Link href="/Login" className="text-black hover:text-gray-600">LogIn</Link>
               {pathname !== "/" && (
                 <Link href="/" className="text-white hover:text-gray-600">Home</Link>
               )}
@@ -101,8 +108,8 @@ export default function RootLayout({ children }) {
         </div>
 
         {/* Footer */}
-        <footer className="bg-white shadow-sm w-full dark:bg-gray-800 mt-10">
-          <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-gray-500 dark:text-gray-400">
+        <footer className="bg-white shadow-sm w-full dark:bg-gray-800 ">
+          <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-gray-800 dark:text-gray-400">
             Copyright © 2024 Inspire Holdings Inc. - All Rights Reserved.
           </div>
 
@@ -113,12 +120,13 @@ export default function RootLayout({ children }) {
             <a href="https://inspireholdings.ph/home" className="text-white hover:text-gray-600">
               Inspire Holdings
             </a>
-          </div>
+          </div >
           <div className="w-full mx-auto max-w-screen-xl p-4 text-center text-sm text-gray-500 dark:text-gray-400">
+
             Powered by Inspire Holdings Inc.
           </div>
-        </footer>
-      </body>
-    </html>
+        </footer >
+      </body >
+    </html >
   );
 }
