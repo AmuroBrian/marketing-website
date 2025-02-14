@@ -11,9 +11,9 @@ const EmailRestAPI = () => {
     e.preventDefault();
 
     // Your EmailJS service ID, template ID, and Public Key
-    const serviceId = 'YOUR_SERVICE_ID';
-    const templateId = 'YOUR_TEMPLATE_ID';
-    const publicKey = 'YOUR_PUBLIC_KEY';
+    const serviceId = 'service_hymqbti';
+    const templateId = 'template_i7sn93g';
+    const publicKey = '8nV8GppQ82RWajpEo';
 
     // Create an object with EmailJS service ID, template ID, Public Key, and Template params
     const data = {
@@ -23,7 +23,7 @@ const EmailRestAPI = () => {
       template_params: {
         from_name: name,
         from_email: email,
-        to_name: 'Web Wizard',
+        to_name: 'Inspire',
         message: message,
       }
     };

@@ -18,7 +18,7 @@ export default function TravelProtect() {
         {/* Right Side - Text Content */}
         <div className="w-full md:w-1/2 font-bold text-center md:text-left mt-6 md:mt-0 px-4">
           <h1 className="text-3xl font-bold text-gray-900">
-          Introducing Inspire Travel Protection.
+          Inspire Travel Protection.
           </h1>
                 <br>
                 </br>
