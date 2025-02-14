@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
               <Link href="/ContactUs" className="text-black hover:text-gray-600">Contact Us</Link>
               <Link href="/Login" className="text-black hover:text-gray-600">Login</Link>
               {pathname !== "/" && (
-                <Link href="/" className="text-white hover:text-gray-600">Home</Link>
+                <Link href="/" className="text-black hover:text-gray-600">Home</Link>
               )}
             </div>
 
