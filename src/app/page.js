@@ -6,11 +6,12 @@ import LoginAuthentication from "./components/LoginAuthentication";
 import Navigation from "./components/navigation"; 
 
 
+
 export default function Home() {
   return (
     <div>
         <div>
-            <LoginAuthentication />
+          <LoginAuthentication />
         </div>
 
         <div>
@@ -24,6 +25,9 @@ export default function Home() {
         <div>
             <EmailForm />
         </div>
+
+      
+
      
     </div>
   );
