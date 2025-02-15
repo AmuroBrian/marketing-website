@@ -76,10 +76,6 @@ export default function WhatIsAgent() {
           Register Now
         </button>
       </motion.div>
-
-      <div>
-        <AccountInformation />
-      </div>
     </div>
   );
 }
