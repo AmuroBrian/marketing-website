@@ -34,7 +34,7 @@ export default function Navigation() {
 
       {/* Main Container */}
       <div className="flex items-center justify-center ">
-        <div className="flex items-center justify-center flex-col md:flex-row bg-white shadow-lg rounded-2xl p-6 md:p-10 max-w-6xl mx-auto shadow-black-500">
+        <div className="flex items-center justify-center flex-col md:flex-row bg-white rounded-2xl p-6 md:p-10 max-w-6xl mx-auto shadow-black-500">
           {/* Left Side - Image */}
           <div className="w-full md:w-1/2 h-64 md:h-auto">
             <img

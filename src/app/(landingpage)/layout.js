@@ -47,9 +47,6 @@ export default function RootLayout({ children }) {
             <div className="hidden md:flex space-x-6 items-center">
               <Link href="/ContactUs" className="text-black hover:text-gray-600">Contact Us</Link>
               <Link href="/" className="text-black hover:text-gray-600" onClick={openModal}>Login</Link>
-              {pathname !== "/" && (
-                <Link href="/" className="text-black hover:text-gray-600">Home</Link>
-              )}
             </div>
 
             {/* Mobile Menu Button */}
@@ -89,11 +86,9 @@ export default function RootLayout({ children }) {
           {/* Mobile Menu */}
           {menuOpen && (
             <div className="md:hidden flex flex-col space-y-2 bg-white p-4 absolute top-16 left-0 w-full shadow-lg">
-              <Link href="/about" className="text-black hover:text-gray-600 p-2" onClick={() => setMenuOpen(false)}>About</Link>
-              <Link href="/RSSpage" className="text-black hover:text-gray-600 p-2" onClick={() => setMenuOpen(false)}>News</Link>
-              {pathname !== "/" && (
-                <Link href="/" className="text-black hover:text-gray-600 p-2" onClick={() => setMenuOpen(false)}>Home</Link>
-              )}
+              <Link href="/about" className="text-black hover:text-gray-600 p-2">About</Link>
+              <Link href="/" className="text-black hover:text-gray-600 p-2">Contact Us</Link>
+              <Link href="/" className="text-black hover:text-gray-600 p-2" onClick={openModal}>Login</Link>
             </div>
           )}
         </nav>
@@ -105,7 +100,7 @@ export default function RootLayout({ children }) {
         <div className="w-full h-[80vh] justify-center items-center ">
           <AutoCarousel />
         </div>
-        <div className="container mx-auto px-1 py-6 border-black border-2 border-solid">
+        <div className="mx-0 px-0 py-0 flex justify-center items-center p-2">
           {children}
         </div>
         {/* Footer */}
