@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function TravelProtect() {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-2xl p-6 md:p-10 max-w-6xl mx-auto border-4 border-blue-500">
+    <div className="flex flex-col md:flex-row items-center bg-white rounded-2xl p-6 md:p-10 max-w-6xl mx-auto">
       {/* Left Side - Image */}
       <div className="w-full md:w-1/2 h-64 md:h-auto">
         <img
